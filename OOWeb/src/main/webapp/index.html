@@ -3,13 +3,18 @@
     <head>
         <title>Pos 2017</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <h1>Pos 2017</h1>
-        <form action="principal.jsp" method="POST">
-            Nome:<input type="text" name="nome" value="" />
-            <input type="submit" value="Enviar" />
+        <br>
+        <form class="form-inline" action="principal.jsp" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-        
+
     </body>
 </html>
